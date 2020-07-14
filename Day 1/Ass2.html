@@ -1,0 +1,32 @@
+<!-- var is used so that we can use the variable as globally or locally in piece of code that is whenever we try to declare a variable using var method it will be used throughout the piece of code. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var name = "Hello";
+        document.write(name);
+
+        // let help us to use the code into a block statement. We will let command so that we could differiant it with var name as on a particular program n number of developers work on it. so there would be possibility that same variable name can be used by other dev to so to avoid confusion also problem during the dugging we use let keyword.
+        {
+            let name = "<br>Let Hello";
+            document.write(name);
+        }
+
+        // const known as constant which is declared as the variable throughout the program which would make the particular variable not changable also the value present in const when we try to change it will give an error.
+
+        const cname = "<br>const name";
+        cname = "const name changed";
+        document.write(cname);
+    </script>
+    
+    
+</body>
+</html>
