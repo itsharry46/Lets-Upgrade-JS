@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="text-align: center;">String Methods</h2>
+
+    <script>
+
+        let str = "Hello this is a string ";
+        let str1 = "continue the string";
+
+        console.log(str.charAt(4));
+        console.log(str.charCodeAt(8));
+        console.log(str.concat(str1));
+        console.log(str.endsWith('hello'));
+        console.log(String.fromCharCode(65));
+        console.log(str.includes('Hello'));
+        console.log(str.indexOf('Hello'));
+        console.log(str.lastIndexOf('h'));
+        
+        let b = str.repeat(2);
+        console.log(b);
+
+        console.log(str.replace(str1));
+
+        console.log(str.search('h'));
+
+        console.log(str.slice(' '));
+        console.log(str.split('e'));
+        console.log(str.substring('he'));
+        console.log(str.toLowerCase());
+        console.log(str1.toUpperCase());
+        console.log(str.trim());
+        
+        let x = str.valueOf();
+        console.log(x);
+    </script>
+
+    <h2 style="text-align: center;">Array Methods</h2>
+
+    <script>
+        let arr = ['one','two','three','four'];
+        let arr1 = ['eleven','twelve','thirteen'];
+
+        console.log(arr.concat(arr1));
+        console.log(arr.copyWithin(arr1));
+        console.log(arr.fill('add'));
+        
+        console.log(arr.push('pushed'));
+        console.log(arr.pop());
+        console.log(arr1.sort());
+        console.log(arr.valueOf());
+        
+
+
+    </script>
+</body>
+</html>
