@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>Write a  program to take marks as input from the user and grade him accordingly. Use Conditional statements. Also the same code using switch or ternary</p>
+
+    <script>
+
+        let marks = prompt("Enter the marks of the user ");
+
+        if(marks>=80)
+        {
+            console.log("You have scored grade A ");
+        }
+        else if (marks>=60)
+        {
+            console.log("You have scored grade B");
+        }
+        else if (marks>=40)
+        {
+            console.log("You have scored grade C");
+        }
+        else
+        {
+            conosle.log("You have been failed");
+        }
+
+        switch(true)
+        {
+            case marks>=80 :
+                console.log("You have scored grade A");
+                break;
+            
+            case marks>=60 :
+                console.log("You have scored grade B");
+                break;
+
+            case marks>=40:
+                console.log("You have scored grade C");
+                break;
+
+            default:
+                console.log("You have been failed");
+
+        }
+
+    </script>
+
+</body>
+</html>
