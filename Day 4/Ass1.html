@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Create a for loop that iterates up to 100 while outputing 'fizz' at multiples of 3, 'buzz' at multiples of 5 and 'fizzbuzz' at multiples of 3 and 5.</p>
+
+    <script>
+
+        for (let i=1;i<=100;i++)
+        {
+            if (i%3==0 && i%5==0)
+            {
+                document.write('fizzbuzz <br>');
+            }
+            else if (i%5==0)
+            {
+                document.write('buzz <br>');
+            }
+            else if (i%3==0)
+            {
+                document.write('fizz <br>');
+            }
+            else
+            {
+                document.write(i,'<br>');
+            }
+        }
+
+    </script>
+
+</body>
+</html>
