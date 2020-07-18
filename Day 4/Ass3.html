@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>Imagine you are going out to do some grocery shopping.
+        So you have an array called shoppingList with all the products you want to buy. <br>
+        Now that you are inside of the shop, you have a basket with all the products from your list, but you want to
+        add a few more. <br>
+        Create a new array called shoppingBasket, that will be a copy of the shoppingList array, and add some
+        new products into it.</p>
+
+
+    <script>
+
+        let shoppingList = ['cooking oil', 'termeric', 'coconut', 'peanuts', 'ditergent'];
+
+        let shoppingBasket = [...shoppingList];
+
+        shoppingList.push('Rice','wheat');
+
+        console.log(shoppingList);
+        console.log(shoppingBasket);
+
+    </script>        
+
+</body>
+</html>
