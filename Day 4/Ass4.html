@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>Make a Calculator in Javascript which can do operations as Addtion, Subtraction, Multiplication, Division,Square root, Percentage.
+        </p>
+
+    <script>
+
+        let a = prompt("Enter number a = ");
+        a = Number(a);
+        console.log(a);
+
+        let b = prompt("Enter number b = ");
+        b = Number(b);
+        console.log(b);
+
+        let c = prompt("1.Addtion 2.Subtraction 3.Multiplication 4.Division 5.Square root 6.Percentage.")
+
+        let ans;
+        let ans1;
+
+        switch(c)
+        {
+            case '1':
+                ans = a + b;
+                console.log(c);
+                break;
+
+            case '2':
+                ans = a - b;
+                console.log(c);
+                break;
+            
+            case '3':
+                ans = a * b;
+                console.log(c);
+                break;
+            
+            case '4':
+                ans = a / b;
+                console.log(c);
+                break;
+
+            case '5':
+                ans = Math.sqrt(a);
+                ans1 = Math.sqrt(b);
+                console.log(`Sqrt of a is ${a} and b is ${b}`);
+                break;
+            
+            case '6':
+                ans = ((a+b)/200)*100;
+                console.log(`Percentage is ${ans} %.`);
+                break;
+
+            default :
+                console.log("Invalid option");
+                break;
+        }
+
+    </script>
+    
+</body>
+</html>

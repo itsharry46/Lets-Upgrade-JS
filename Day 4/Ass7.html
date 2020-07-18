@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Write the code which outputs prime numbers in the interval from 2 to n.
+        For n = 10 the result will be 2,3,5,7.<br>
+        P.S. The code should work for any n, not be hard-tuned for any fixed value</p>
+
+    <script>
+
+        let num = prompt("Enter the range");
+
+        function isPrime(num) 
+        {
+            for ( var i = 2; i < num; i++ ) 
+            {
+                if ( num % i === 0 ) 
+                {
+                return false;
+                }
+            }
+            return true;
+        }
+
+        function display(n) 
+        {
+            var arr = [2];
+            for ( var i = 3; i <= n; i+=2 ) 
+            {
+                if ( isPrime(i) ) 
+                {
+                    arr.push(i);
+                }
+            }
+            console.log(`${arr} is are prime number`);
+        }
+
+        display(num);
+
+    </script>
+
+</body>
+</html>
