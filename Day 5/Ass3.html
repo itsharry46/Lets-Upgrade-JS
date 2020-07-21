@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Using promises/async await/fetch get the random todos from the json <br>placeholder api. And log all the<br>
+        completed todos to the console.</p>
+
+    <script>
+        fetch('https://jsonplaceholder.typicode.com/commments')
+  .then(res => res.json())
+  .then(data => console.log(data));
+
+  fetch('https://jsonplaceholder.typicode.com/posts',{
+      method:'POST',
+      body: JSON.stringify({
+          userid:214,
+          title:"Hello Title",
+          body:"Hello body"
+      })
+  }).then(res => res.json()).then(data=> console.log(data)) 
+    </script>
+</body>
+</html>

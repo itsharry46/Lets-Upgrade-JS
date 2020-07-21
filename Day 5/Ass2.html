@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Create a Class User with properties as name, age & email.<br>
+        He can login and logout<br>
+        Create another class Moderator which has all the features of User, plus <br>additional functionality to Add<br>
+        coins and remove coins.<br>
+        Create one more class Admin which has all the features of Moderator plus <br>additional features like add a<br>
+        Course and delete a particular course for a user<br></p>
+
+    <script> 
+        class user{
+            constructor(name, age, email){
+                this.name = name;
+                this.age = age;
+                this.email = email;
+            }
+
+            login(){
+                console.log(`${this.name} has logged in`);
+            }
+            logout(){
+                console.log(`${this.name} has logged out`)
+            }
+        }
+
+        class Moderator extends user{
+            constructor(lucoins){
+                this.lucoins = lucoins;
+            }
+
+            addcoins(){
+                this.lucoins += 1;
+                console.log(`${this.lucoins} has been added`);
+            }
+
+            removecoins(){
+                this.lucoins -= 1;
+                console.log(`${this.lucoins} has been removed`);
+            }
+           
+        }
+
+        class admin extends Moderator{
+            constructor(course){
+                this.course = course;
+            }
+
+            addcourse(){
+                console.log(`${this.course} has been added`);
+            }
+
+            removecourse(){
+                console.log(`${this.course} has been removed`);
+            }
+        }
+
+        let user1 = new user ('Hari',21,'hari@gmail.com');
+
+        user1.login();
+    </script>
+</body>
+</html>
