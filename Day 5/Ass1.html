@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>
+        Write a program which does the following things:<br>
+        1. Takes a positive number from the user.<br>
+        2. Makes an array of numbers till the number given by user<br>
+        3. Use higher order function to filter the odd numbers<br>
+        4. Generate and array of the cubes of the filtered numbers<br>
+    </p>
+
+    <script>
+        
+            let num = prompt("Enter a positive number ");
+            let arr = [];
+            arr.push(num);  
+
+            let odd = arr.filter(el=>el%2!=0);
+
+            let cube = odd.map(function(el){return el**3});
+            console.log(cube); 
+
+    </script>
+</body>
+</html>
