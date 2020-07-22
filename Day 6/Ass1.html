@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Write a program that will iterate over an array of colors and change the background of the page after 5 seconds.
+    </p>
+    <button onclick="changeColor()">Click me</button>
+    
+    <script>
+
+    var c = ["blue", "black", "yellow", "red"];
+
+    function changeColor() 
+    {
+        setTimeout(function loop() 
+        {
+            document.bgColor = c.shift();
+            if (c.length) 
+            {
+                setTimeout(loop, 5000);
+            }
+        }, 5000);
+    }
+
+    </script>
+
+</body>
+</html>
